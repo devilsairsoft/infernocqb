@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>boxfuse:kill</goal>
+                <goal>boxfuse:fuse</goal>
+                <goal>boxfuse:run</goal>
+                
+            </goals>
+            <properties>
+                <boxfuse.env>prod</boxfuse.env>
+                
+            </properties>
+        </action>
+    </actions>
